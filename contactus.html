@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Go Green, Kids! - Homepage</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+  <script src="scripts/modernizr-2.6.1.min.js"></script>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="scripts/lean-slider.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,300,700" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="containercontactus">
+
+<img src="images/gogreendog.jpg" alt="" width="179" height="318" usemap="#Map2" id="gogreendog"/>
+<map name="Map2">
+  <area shape="rect" coords="38,173,174,294" href="index.html">
+</map>
+<img src="images/gogreenkids.jpg" alt="" width="845" height="318" usemap="#Map" id="ggkids"/>
+<map name="Map">
+  <area shape="rect" coords="2,102,797,221" href="index.html">
+</map>
+
+<div class="font" id="searchbox">Search:<input class="curves" type="search" id="search"></div>
+
+<div id="navibar"> 
+<a href="index.html">
+<div id="home_btn"> 
+
+<img src="images/home_btn.jpg" alt="" width="141" height="27" id="homebtn"/>
+</div></a>
+
+<div class="dropdown" id="aboutus_btn">
+<div class="dropdown-content">
+<a href="aboutus.html">Our Story</a>
+      <a href="contactus.html"> Contact Us</a>
+</div>
+<img src="images/aboutus_btn.jpg" alt="" width="188" height="27" id="aboutusbtn"/>
+</div>
+
+<div class="dropdown" id="activities_btn">
+<div class="dropdown-content">
+	<a href="games.html">Games & Quizzes</a>
+      <a href="printables.html"> Print Me!</a>
+ </div>
+<img src="images/activities_btn.jpg" alt="" width="216" height="27" id="activitiesbtn"/> 
+</div>
+
+<div class="dropdown" id="funfacts_btn"> <a href="funfacts.html"><img src="images/funfacts_btn.jpg" alt="" width="199" height="27" id="funfactsbtn"/></a>
+</div>
+
+
+<div class="dropdown" id="greentips_btn">
+<div class="dropdown-content">
+<a href="greentipsforkids.html">For Kids</a>
+      <a href="greentipsforparents.html"> For Parents</a>
+</div>
+<img src="images/greentips_btn.jpg" alt="" width="213" height="27" id="greentipsbtn"/>
+
+</div>
+
+</div>
+
+
+<div id="contactusdiv">
+<div id="contactusdivcontain">
+<h1 class="headerfont" id="contactus"> Contact Us!</h1>
+<p class="font"> Got any feedback or suggestions? We'd love to hear from you! Just fill up the form below, and we'll be happy to read through your thoughts! </p>
+
+<img src="images/doghappy.jpg" alt="" width="136" height="152" id="doghappy"/>
+<p class="font" id="name">Name: <input class="curves" type="text"></p>
+<p class="font" id="email">Email: <input class="curves" type="email">
+  </p>
+<p class="font" id="message"> Message:
+  <textarea name="messagearea" cols="45" rows="15" maxlength="400" class="curves" id="messagearea"  size="50
+  "></textarea>
+  <button class="dropbtn" id="submit" onClick="Submitted()">Submit!</button>
+</p>
+<p class="font" id="alternative">Or Alternatively...</p>
+<p class="font" id="alternativetext"> You can keep in touch with us through our Facebook and Twitter pages linked below.</p><div id="fblink"><a href="https://www.facebook.com/Go-Green-Kids-1152801741397126/?ref=hl"><img src="images/fblogo.png" alt="" width="47" height="47" id="fblogo"/></a>
+  <p class="font" id="ggkidsfb"><a href="https://www.facebook.com/Go-Green-Kids-1152801741397126/?ref=hl">Our Facebook!</a></p></div>
+<div id="twitlink"><a href="https://twitter.com/GGKIDSDOGE"><img src="images/twitlogo.png" alt="" width="47" height="47" id="twitlogo"/></a>
+  <p class="font" id="ggkidstwit"><a href="https://twitter.com/GGKIDSDOGE">Our Twitter!</a></p></div>
+
+</div></div>
+
+
+
+
+<div id="footer">
+<h6 id="copyright"> Copyright © 2016 </h6>
+<h6 id="feedback"> Site Feedback | Policy Statement </h6>
+
+</div>
+</div>
+</body>
+<script>
+$(document).ready(function() {
+        var slider = $('#slider').leanSlider({
+            directionNav: '#slider-direction-nav',
+            controlNav: '#slider-control-nav'
+        });
+    });
+	
+	function Submitted() {
+		alert('Your response has been submitted. Thank you for your message!')
+		window.location.href = 'contactus.html'
+	}
+
+</script>
+</html>

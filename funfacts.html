@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Go Green, Kids! - Homepage</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+  <script src="scripts/modernizr-2.6.1.min.js"></script>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="scripts/lean-slider.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,300,700" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="containerfunfacts">
+
+<img src="images/gogreendog.jpg" alt="" width="179" height="318" usemap="#Map2" id="gogreendog"/>
+<map name="Map2">
+  <area shape="rect" coords="38,173,174,294" href="index.html">
+</map>
+<img src="images/gogreenkids.jpg" alt="" width="845" height="318" usemap="#Map"/>
+<map name="Map">
+  <area shape="rect" coords="2,102,797,221" href="index.html">
+</map>
+
+<div class="font" id="searchbox">Search:<input class="curves" type="search" id="search"></div>
+<div id="navibar"> 
+<a href="index.html">
+<div id="home_btn"> 
+
+<img src="images/home_btn.jpg" alt="" width="141" height="27" id="homebtn"/>
+</div></a>
+
+<div class="dropdown" id="aboutus_btn">
+<div class="dropdown-content">
+<a href="aboutus.html">Our Story</a>
+      <a href="contactus.html"> Contact Us</a>
+</div>
+<img src="images/aboutus_btn.jpg" alt="" width="188" height="27" id="aboutusbtn"/>
+</div>
+
+<div class="dropdown" id="activities_btn">
+<div class="dropdown-content">
+	<a href="games.html">Games & Quizzes</a>
+      <a href="printables.html"> Print Me!</a>
+ </div>
+<img src="images/activities_btn.jpg" alt="" width="216" height="27" id="activitiesbtn"/> 
+</div>
+
+<div class="dropdown" id="funfacts_btn"> <a href="funfacts.html"><img src="images/funfacts_btn.jpg" alt="" width="199" height="27" id="funfactsbtn"/></a>
+</div>
+
+
+<div class="dropdown" id="greentips_btn">
+<div class="dropdown-content">
+<a href="greentipsforkids.html">For Kids</a>
+      <a href="greentipsforparents.html"> For Parents</a>
+</div>
+<img src="images/greentips_btn.jpg" alt="" width="213" height="27" id="greentipsbtn"/>
+
+</div>
+
+</div>
+
+<h1 class="headerfont" id="funfactsheader">Fun Facts!</h1>
+
+<div id="birdyshow"><img src="images/birdy.png" alt="" width="267" height="179" id="birdy" onClick="ChangeTextBird()"/>
+<img src="images/birdyspeech.png" alt="" width="600" height="196" id="birdyspeech"/>
+<p class="font" id="birdyspeechtext">Hi, I'm Birdo!</p>
+
+</div>
+
+<div id="monkeyshow">
+  <img src="images/monkey.png" alt="" width="113" height="127" id="monkey" onClick="ChangeTextMonk()"/>
+    <img src="images/monkeyspeech.png" alt="" width="473" height="182" id="monkeyspeech"/>
+    <p class="font" id="monkeyspeechtext">Waah! Help me!</p>
+</div>
+
+<div id="sharkshow"> 
+<img src="images/sharky.png" alt="" width="380" height="369" id="sharky" onClick="ChangeTextShark()"/>
+<img src="images/sharkspeech.png" alt="" width="500" height="163" id="sharkspeech"/>
+<p class="font" id="sharkspeechtext"> Argh! Why is there garbage in my <br/> ocean?! </p>
+</div>
+<div id="octoshow">
+<img src="images/octomus.png" alt="" width="311" height="326" id="octo" onClick="ChangeTextOcto()"/>
+<img src="images/octospeech.png" alt="" width="550" height="180" id="octospeech"/>
+<p class="font" id="octospeechtext" > Just hold your breath<br/> for a moment, Sharko... </p>
+</div>
+
+<div id="footer">
+<h6 id="copyright"> Copyright © 2016 </h6>
+<h6 id="feedback"> Site Feedback | Policy Statement </h6>
+
+</div>
+</div>
+</body>
+<script>
+$(document).ready(function() {
+        var slider = $('#slider').leanSlider({
+            directionNav: '#slider-direction-nav',
+            controlNav: '#slider-control-nav'
+        });
+    });
+	
+	var clicks=0
+	
+function ChangeTextBird() {
+	
+	clicks++;
+	if(clicks==1){
+		
+		document.getElementById('birdyspeech').style.visibility = 'visible';
+		document.getElementById('birdyspeechtext').style.visibility= 'visible';
+	}
+	if(clicks==2){
+		document.getElementById('birdyspeechtext').innerHTML = 'Welcome to fun facts!'
+	}
+	if(clicks==3){
+		document.getElementById('birdyspeechtext').innerHTML = "Can you see those clouds?<br/> They look so scary!"
+	}
+	if(clicks==4){
+		document.getElementById('birdyspeechtext').innerHTML = "That's because..."
+	}
+}
+
+var counter=0
+function ChangeTextMonk() {
+	counter++;
+	if(counter==1){
+		document.getElementById('monkeyspeechtext').innerHTML = 'My precious trees are <br/> getting cut down!<br/> They look so scary!'
+	}
+	if(counter==2){
+		document.getElementById('monkeyspeechtext').innerHTML = "Over 1000 trees are being cut<br/> down!"
+	}
+	if(counter==3){
+		document.getElementById('monkeyspeechtext').innerHTML = "That's because..."
+	}
+}
+
+var laps=0
+function ChangeTextShark() {
+	laps++;
+	if(laps==1){
+		document.getElementById('sharkspeechtext').innerHTML = "Hey Octomus! What's the big <br/>idea?!"
+ 	}
+	if(laps==2){
+		document.getElementById('sharkspeechtext').innerHTML = "I'm gonna flail if I don't get an <br/> answer from you RIGHT NOW!"
+	}
+	if(laps==3){
+		document.getElementById('sharkspeechtext').innerHTML = " My kids are gonna be so sad,<br/>their home in such a mess!";
+		document.getElementById('octospeech').style.visibility = 'visible';
+		document.getElementById('octospeechtext').style.visibility = 'visible';
+	}
+}
+
+var legs=0
+function ChangeTextOcto() {
+	legs++;
+	if(legs==1){
+		document.getElementById('octospeechtext').innerHTML = "It looks like a bunch of <br/> waste is being dumped here..."
+ 	}
+	if(legs==2){
+		document.getElementById('octospeechtext').innerHTML = "...right into our own home!"
+	}
+	if(legs==3){
+		document.getElementById('octospeechtext').innerHTML = "That's because..."
+	}
+}
+
+
+
+</script>
+</html>

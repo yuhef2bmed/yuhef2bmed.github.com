@@ -1,0 +1,144 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Go Green, Kids! - Homepage</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+  <script src="scripts/modernizr-2.6.1.min.js"></script>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="scripts/lean-slider.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,300,700" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="containergreentips">
+
+<img src="images/gogreendog.jpg" alt="" width="179" height="318" usemap="#Map2" id="gogreendog"/>
+<map name="Map2">
+  <area shape="rect" coords="38,173,174,294" href="index.html">
+</map>
+<img src="images/gogreenkids.jpg" alt="" width="845" height="318" usemap="#Map"/>
+<map name="Map">
+  <area shape="rect" coords="2,102,797,221" href="index.html">
+</map>
+
+<div class="font" id="searchbox">Search:<input class="curves" type="search" id="search"></div>
+<div id="navibar"> 
+<a href="index.html">
+<div id="home_btn"> 
+
+<img src="images/home_btn.jpg" alt="" width="141" height="27" id="homebtn"/>
+</div></a>
+
+<div class="dropdown" id="aboutus_btn">
+<div class="dropdown-content">
+<a href="aboutus.html">Our Story</a>
+      <a href="contactus.html"> Contact Us</a>
+</div>
+<img src="images/aboutus_btn.jpg" alt="" width="188" height="27" id="aboutusbtn"/>
+</div>
+
+<div class="dropdown" id="activities_btn">
+<div class="dropdown-content">
+	<a href="games.html">Games & Quizzes</a>
+      <a href="printables.html"> Print Me!</a>
+ </div>
+<img src="images/activities_btn.jpg" alt="" width="216" height="27" id="activitiesbtn"/> 
+</div>
+
+<div class="dropdown" id="funfacts_btn"> <a href="funfacts.html"><img src="images/funfacts_btn.jpg" alt="" width="199" height="27" id="funfactsbtn"/></a>
+</div>
+
+
+<div class="dropdown" id="greentips_btn">
+<div class="dropdown-content">
+<a href="greentipsforkids.html">For Kids</a>
+      <a href="greentipsforparents.html"> For Parents</a>
+</div>
+<img src="images/greentips_btn.jpg" alt="" width="213" height="27" id="greentipsbtn"/>
+
+</div>
+
+</div>
+
+<h1 class="headerfont" id="forkidsheader">Green Tips:<br/> For <span id="kids">Kids!</span></h1>
+<div id="lighttip">
+<img src="images/line1.png" alt="" width="1102" height="109" id="line1"/>
+<img src="images/lighton.png" alt="" width="126" height="222" id="light1" onclick="RemoveLight1();countClicks()"/>
+<img src="images/lighton.png" alt="" width="126" height="222" id="light2" onClick="RemoveLight2();countClicks()"/>
+<img src="images/lighton.png" alt="" width="126" height="222" id="light3" onClick="RemoveLight3();countClicks()"/>
+<img src="images/greentipsdogsad.png" alt="" width="150" height="186" id="lightdogsad"/><img src="images/greentipsdogexcited.png" alt="" width="150" height="186" id="lightdoghappy"/> <img src="images/lighttipspeech.png" alt="" width="430" height="140" id="lightspeech"/>
+<p class="font" id="tip"><strong>TIP!</strong><br> Check, check, and triple check<br/> that you turn off your lights<br/> when you're not using them! </p>
+<p class="font" id="lightspeechtext"> Aw man, who left the lights on?<br/> Click on them to turn them off! </p>
+ </div>
+ 
+ <div id="fantip">
+ <img src="images/line1.png" alt="" width="1102" height="109" id="line2"/>
+ <img src="images/fan.png" alt="" name="fan" width="304" height="288" id="fan"/>
+ <img src="images/fantipspeech.png" alt="" width="430" height="140" id="fanspeech"/>
+ <img src="images/fandog.png" alt="" width="170" height="147" id="fandog"/>
+ <p class="font" id="tip2"><strong>TIP!</strong> <br/>When going to bed,<br/> use fans instead of<br/> air-conditioners, or aircons! </p>
+ <p class="font" id="fanspeechtext"> Fans use less energy than aircons, <br/>and they are mighty strong too! </p>
+ </div>
+ <div id="watertip">
+ <img src="images/line1.png" alt="" width="1102" height="109" id="line3"/>
+ <div id="doginpail">
+ <img src="images/bucket.png" alt="" width="226" height="237" id="bucket"/>
+ <img src="images/dogcold.png" alt="" width="139" height="171" id="dogcold"/>
+ <img src="images/bucketopen.png" alt="" width="226" height="237" id="bucketopen"/>
+ </div>
+<img src="images/lighttipspeech.png" alt="" width="430" height="140" id="watertipspeech"/>
+<p class="font" id="tip3"> <strong>TIP!</strong> <br/> Rather than using a shower when you bathe,<br/> use a big pail of water instead!</p>
+<p class="font" id="waterspeechtext"> Brr! It's cold, but using pails can<br/> save a lot of fresh water!</p>
+  </div>
+
+
+
+
+
+<div id="footer">
+<h6 id="copyright"> Copyright © 2016 </h6>
+<h6 id="feedback"> Site Feedback | Policy Statement </h6>
+
+</div>
+</div>
+</body>
+<script>
+var counter=0
+function RemoveLight1() {
+	counter++;
+	document.getElementById('light1').src='images/lightoff.png'
+	if(counter==3){
+		document.getElementById('lightdogsad').src='images/greentipsdogexcited.png'
+	}
+}
+function RemoveLight2() {
+	document.getElementById('light2').src='images/lightoff.png'
+	if(counter==3){
+		document.getElementById('lightdogsad').src='images/greentipsdogexcited.png';
+		document.getElementById('lightspeechtext').innerHTML = "Yay! Now we won't be wasting so much electricity!"
+	}
+}
+function RemoveLight3() {
+	document.getElementById('light3').src='images/lightoff.png'
+	if(counter==3){
+		document.getElementById('lightdogsad').src='images/greentipsdogexcited.png'
+	}
+}
+
+var clicked="";
+count=0;
+function countClicks(){
+
+		count++;
+		
+	if(count==3){
+		document.getElementById('lightspeechtext').innerHTML = "Yay! Now we won't waste <br/> electricity!";
+		document.getElementById('lightdogsad').style.visibility= "hidden";
+		document.getElementById('lightdoghappy').style.visibility= "visible";
+	}
+}
+</script>
+</html>

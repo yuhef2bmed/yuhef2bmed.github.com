@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Go Green, Kids! - Homepage</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+  <script src="scripts/modernizr-2.6.1.min.js"></script>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="scripts/lean-slider.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,300,700" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="containerprintables">
+
+<img src="images/gogreendog.jpg" alt="" width="179" height="318" usemap="#Map2" id="gogreendog"/>
+<map name="Map2">
+  <area shape="rect" coords="38,173,174,294" href="index.html">
+</map>
+<img src="images/gogreenkids.jpg" alt="" width="845" height="318" usemap="#Map" id="ggkids"/>
+<map name="Map">
+  <area shape="rect" coords="2,102,797,221" href="index.html">
+</map>
+
+<div class="font" id="searchbox">Search:<input class="curves" type="search" id="search"></div>
+
+<div id="navibar"> 
+<a href="index.html">
+<div id="home_btn"> 
+
+<img src="images/home_btn.jpg" alt="" width="141" height="27" id="homebtn"/>
+</div></a>
+
+<div class="dropdown" id="aboutus_btn">
+<div class="dropdown-content">
+<a href="aboutus.html">Our Story</a>
+      <a href="contactus.html"> Contact Us</a>
+</div>
+<img src="images/aboutus_btn.jpg" alt="" width="188" height="27" id="aboutusbtn"/>
+</div>
+
+<div class="dropdown" id="activities_btn">
+<div class="dropdown-content">
+	<a href="games.html">Games & Quizzes</a>
+      <a href="printables.html"> Print Me!</a>
+ </div>
+<img src="images/activities_btn.jpg" alt="" width="216" height="27" id="activitiesbtn"/> 
+</div>
+
+<div class="dropdown" id="funfacts_btn"> <a href="funfacts.html"><img src="images/funfacts_btn.jpg" alt="" width="199" height="27" id="funfactsbtn"/></a>
+</div>
+
+
+<div class="dropdown" id="greentips_btn">
+<div class="dropdown-content">
+<a href="greentipsforkids.html">For Kids</a>
+      <a href="greentipsforparents.html"> For Parents</a>
+</div>
+<img src="images/greentips_btn.jpg" alt="" width="213" height="27" id="greentipsbtn"/>
+
+</div>
+
+</div>
+
+
+
+<h1 class="headerfont" id="welcome"> Welcome to our Printables! </h1>
+<div id="drawings"> 
+<h3 class="headerfont" id="colourheader"> Colour Me! </h3>
+<img src="images/drawingblank.png" alt="" width="1169" height="291" id="drawingblank"/>
+<a href="#"><img src="images/drawing1.png" alt="" width="266" height="188" id="drawing1" onMouseOver="hoveron1()" onMouseOut="stophover1()"/></a>
+<a href="#"><img src="images/drawing2.png" alt="" width="262" height="176" id="drawing2" onMouseOver="hoveron2()" onMouseOut="stophover2()"/></a>
+<a href="#"><img src="images/drawing3.png" alt="" width="277" height="199" id="drawing3" onMouseOver="hoveron3()" onMouseOut="stophover3()"/></a>
+</div>
+
+<div id="connectthedots">
+<h3 class="headerfont" id="dotsheader"> Connect The Dots! </h3>
+<img src="images/dots.png" 
+alt="" width="777" height="138" id="dots"/>
+<a href="#"><img src="images/dots1.png" alt="" width="204" height="204" id="dots1"/></a>
+<a href="#"><img src="images/dots2.png" alt="" width="140" height="140" id="dots2"/></a>
+<a href="#"><img src="images/dots3.png" alt="" width="265" height="265" id="dots3"/></a>
+</div>
+
+<div id="hanger">
+<h3 class="headerfont" id="hangerheader"> Door Hangers! </h3>
+<img src="images/rope.png" alt="" width="1024" height="74" 
+id="rope"/>
+<a href="#"><img src="images/hanger1.png" alt="" width="256" height="333" id="hanger1"/></a>
+<a href="#"><img src="images/hanger2.png" alt="" width="139" height="258" id="hanger2"/></a>
+<a href="#"><img src="images/hanger3.png" alt="" width="209" height="329" id="hanger3"/></a>
+</div>
+
+<div id="footer">
+<h6 id="copyright"> Copyright © 2016 </h6>
+<h6 id="feedback"> Site Feedback | Policy Statement </h6>
+</div>
+</div>
+
+</body>
+<script>
+$(document).ready(function() {
+        var slider = $('#slider').leanSlider({
+            directionNav: '#slider-direction-nav',
+            controlNav: '#slider-control-nav'
+        });
+    });
+	
+	
+function hoveron1() {
+	document.getElementById('drawingblank').src = 'images/drawinghover1.png'
+}
+function stophover1() {
+	document.getElementById('drawingblank').src = 'images/drawingblank.png'
+}
+
+function hoveron2() {
+	document.getElementById('drawingblank').src = 'images/drawinghover2.png'
+}
+function stophover2() {
+	document.getElementById('drawingblank').src = 'images/drawingblank.png'
+}
+
+function hoveron3() {
+	document.getElementById('drawingblank').src = 'images/drawinghover3.png'
+}
+function stophover3() {
+	document.getElementById('drawingblank').src = 'images/drawingblank.png'
+}
+
+
+</script>
+</html>

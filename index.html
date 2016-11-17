@@ -1,0 +1,119 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Go Green, Kids! - Homepage</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+  <script src="scripts/modernizr-2.6.1.min.js"></script>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="scripts/lean-slider.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,300,700" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="containerhome">
+
+<img src="images/gogreendog.jpg" alt="" width="179" height="318" usemap="#Map2" id="gogreendog"/>
+<map name="Map2">
+  <area shape="rect" coords="38,173,174,294" href="index.html">
+</map>
+<img src="images/gogreenkids.jpg" alt="" width="845" height="318" usemap="#Map"/>
+<map name="Map">
+  <area shape="rect" coords="2,102,797,221" href="index.html">
+</map>
+
+<div class="font" id="searchbox">Search:<input class="curves" type="search" id="search"></div>
+<div id="navibar"> 
+<a href="index.html">
+<div id="home_btn"> 
+
+<img src="images/home_btn.jpg" alt="" width="141" height="27" id="homebtn"/>
+</div></a>
+
+<div class="dropdown" id="aboutus_btn">
+<div class="dropdown-content">
+<a href="aboutus.html">Our Story</a>
+      <a href="contactus.html"> Contact Us</a>
+</div>
+<img src="images/aboutus_btn.jpg" alt="" width="188" height="27" id="aboutusbtn"/>
+</div>
+
+<div class="dropdown" id="activities_btn">
+<div class="dropdown-content">
+	<a href="#">Games & Quizzes</a>
+      <a href="printables.html"> Print Me!</a>
+ </div>
+<img src="images/activities_btn.jpg" alt="" width="216" height="27" id="activitiesbtn"/> 
+</div>
+
+<div class="dropdown" id="funfacts_btn"> <a href="funfacts.html"><img src="images/funfacts_btn.jpg" alt="" width="199" height="27" id="funfactsbtn"/></a>
+</div>
+
+
+<div class="dropdown" id="greentips_btn">
+<div class="dropdown-content">
+<a href="greentipsforkids.html">For Kids</a>
+      <a href="greentipsforparents.html"> For Parents</a>
+</div>
+<img src="images/greentips_btn.jpg" alt="" width="213" height="27" id="greentipsbtn"/>
+
+</div>
+
+</div>
+
+
+
+<div id="sliderhome">
+
+            <div class="slide1"> <img src="images/green_tips_slider.jpg" alt="" id="greentipssl" /></div>
+            
+  </div>
+
+
+<div id="FFOTDdiv">
+<img src="images/recyclelogo.png" alt="" width="55" height="55" id="recyclelogo1"/>
+<h1 class="headerfont" id="FFOTD"> Fun Fact of the Day </h1>
+<a href="funfacts.html"><img src="images/FFOTD.png" alt="" width="439" height="111" id="FFOTDpic"/></a>
+</div>
+
+<div id="GTOTDdiv">
+<img src="images/recyclelogo.png" alt="" width="55" height="55" id="recyclelogo2"/>
+<h1 class="headerfont" id="GTOTD"> Green Tip of the Day </h1>
+<a href="greentipsforkids.html"><img src="images/GTOTD.png" alt="" width="439" height="111" id="GTOTDpic"/></a>
+</div>
+
+
+<div id="connect"> 
+<img src="images/recyclelogo.png" alt="" width="55" height="55" id="recyclelogo3"/>
+<h1 class="headerfont" id="connectwithus"> Connect With Us! </h1>
+<a href="https://www.facebook.com/Go-Green-Kids-1152801741397126/?ref=hl"><img src="images/fblogo.png" alt="" width="40" height="42" id="fblogo"/></a>
+<h3 class="font" id="fb">Like us on Facebook!</h3>
+<a href="https://twitter.com/GGKIDSDOGE"><img src="images/twitlogo.png" alt="" width="47" height="47" id="twitlogo"/></a><a href="https://www.facebook.com/Go-Green-Kids-1152801741397126/?ref=hl"><img src="images/button.png" alt="" width="350" height="58" id="button"/></a>
+<h3 class="font" id="twit"><a href="https://twitter.com/GGKIDSDOGE"> Follow us on Twitter! </a></h3>
+</div>
+
+<div id="printdiv"> <img src="images/recyclelogo.png" alt="" width="55" height="55" id="recyclelogo4"/>
+<h1 class="headerfont" id="print"> Check out our Printables!</h1>
+<a href="printables.html"><img src="images/printableexample.jpg" alt="" width="233" height="166" id="printableexample"/></a>
+</div>
+
+
+
+<div id="footer">
+<h6 id="copyright"> Copyright © 2016 </h6>
+<h6 id="feedback"> Site Feedback | Policy Statement </h6>
+
+</div>
+</div>
+</body>
+<script>
+$(document).ready(function() {
+        var slider = $('#slider').leanSlider({
+            directionNav: '#slider-direction-nav',
+            controlNav: '#slider-control-nav'
+        });
+    });
+</script>
+</html>

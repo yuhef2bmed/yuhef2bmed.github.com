@@ -1,0 +1,1650 @@
+@charset "UTF-8";
+
+
+body {
+	cursor:url(images/cursor.png), default;
+	background-image:url(images/background_wallpaper.jpg);
+}
+
+
+
+#containerhome {
+	width: 1024px;
+	height: 1450px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(images/bgkids.png);
+	border-radius: 15px;
+	border: medium solid #004C16;
+	overflow:hidden;
+}
+#gogreendog  {
+	float: left;
+	border-top-left-radius: 15px 15px;
+}
+#containercontactus #footer {
+	position: relative;
+	top: 50px;
+	left: 15px;
+}
+#contactusdiv {
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	height: 815px;
+	border-radius: 15px;
+	border: medium solid #000000;
+	margin-top: 100px;
+	background-color: #FFFFFF;
+}
+#containerprintables #footer {
+	position: relative;
+	top: -620px;
+	left: 15px;
+}
+#contactusdiv #contactusdivcontain .font {
+	margin-left: 20px;
+	margin-right: 20px;
+	line-height: 1.5;
+}
+#contactusdiv #contactusdivcontain #alternative {
+	margin-top: 120px;
+	font-weight: bold;
+	font-size: large;
+}
+#contactusdiv #contactusdivcontain #fblogo {
+	position: relative;
+	top: -25px;
+	left: 130px;
+}
+#contactusdiv #contactusdivcontain #name {
+	position:relative;
+	top:-150px;
+	margin-left: 100px;
+	margin-top: 30px;
+}
+#contactusdiv #contactusdivcontain #email {
+	position:relative;
+	top:-150px;
+	margin-left: 103px;
+}
+#contactusdiv #contactusdivcontain #message {
+	position:relative;
+	top:-175px;
+	margin-left: 71px;
+	margin-top: 50px;
+}
+#doghappy   {
+	position: relative;
+	margin-left: 200px;
+	margin-top: 0px;
+	left: 225px;
+}
+#contactusdivcontain #message #messagearea {
+	position: absolute;
+	margin-left: 10px;
+	resize:none;
+}
+#contactusdiv #contactusdivcontain #messageid {
+}
+.curves {
+	border-radius: 5px;
+}
+#contactus {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+
+#homebtn:hover{
+	content:url(images/home_btn_hover.jpg);
+}
+
+#aboutusbtn:hover{
+	content:url(images/aboutus_btn_hover.jpg);
+}
+
+#activitiesbtn:hover{
+	content:url(images/activities_btn_hover.jpg);
+}
+
+#funfactsbtn:hover{
+	content:url(images/funfacts_btn_hover.jpg);
+}
+
+#greentipsbtn:hover{
+	content:url(images/greentips_btn_hover.jpg);
+	
+}
+
+
+
+
+/* hand cursor on clickable input elements */
+label, input[type=button], input[type=submit], button {
+  cursor: pointer; }
+
+/* make buttons play nice in IE:   
+    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
+button {
+  width: auto;
+  overflow: visible; }
+
+/* Sharper Thumbnails */
+img {
+  -ms-interpolation-mode: bicubic; }
+
+input,
+textarea,
+select {
+  padding: 5px;
+  font: 400 1em Verdana, Sans-serif;
+  color: #666;
+  background: #fff;
+  border: 1px solid #999;
+  margin: 0 0 1em 0; }
+
+input:focus,
+textarea:focus,
+select:focus {
+  color: #000;
+  background: #fff;
+  border: 1px solid #666; }
+
+
+a, a:visited {
+  color: #0088cc;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+
+a:hover, a:active {
+  color: #333333;
+  text-decoration: underline; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2em;
+  margin-bottom: 0.6em; }
+
+h1 {
+  font-size: 2.2em; }
+
+h2 {
+  font-size: 1.9em; }
+
+h3 {
+  font-size: 1.7em;
+  margin-top: 2em; }
+
+h4 {
+  font-size: 1.5em; }
+
+h5 {
+  font-size: 1.3em; }
+
+h6 {
+  font-size: 1.2em; }
+
+p {
+  margin-bottom: 1em; }
+
+ol, ul {
+  padding-left: 30px;
+  margin-bottom: 1em; }
+
+b, strong {
+  font-weight: bold; }
+
+i, em {
+  font-style: italic; }
+
+u {
+  text-decoration: underline; }
+
+abbr, acronym {
+  cursor: help;
+  border-bottom: .1em dotted; }
+
+td, td img {
+  vertical-align: top; }
+
+sub {
+  vertical-align: sub;
+  font-size: smaller; }
+
+sup {
+  vertical-align: super;
+  font-size: smaller; }
+
+code {
+  font-family: Courier, "Courier New", Monaco, Tahoma;
+  background: #eee;
+  color: #333;
+  padding: 0px 2px; }
+
+pre {
+  background: #eee;
+  padding: 20px;
+  margin-bottom: 1em;
+  overflow: auto; }
+
+blockquote {
+  font-style: italic;
+  margin: 0 0 1em 15px;
+  padding-left: 10px;
+  border-left: 5px solid #ddd; }
+/*
+ * Lean Slider v1.0.1
+ * http://dev7studios.com/lean-slider
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+.lean-slider {
+    position: relative;
+    *zoom: 1;
+}
+.lean-slider:before,
+.lean-slider:after {
+	content: " ";
+	border-radius: 25px;
+	display: table;
+}
+.lean-slider:after {
+    clear: both;
+}
+
+.lean-slider-slide {
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    display: none;
+}
+.lean-slider-slide.current { display: block; }
+
+
+/*
+ * Lean Slider Sample Styles
+ * http://dev7studios.com/lean-slider
+ */
+ 
+.slider-wrapper {
+	position: relative;
+	background: #fff url(images/loading.gif) no-repeat 50% 50%;
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.4);
+	border-radius: 25px;
+	box-shadow: 0 0 3px rgba(0,0,0,0.4);
+}
+#navibar #home_btn {
+	float: left;
+}
+.lean-slider {
+	border-radius: 25px;
+	overflow: hidden;
+	border: thin solid #000000;
+}
+
+.lean-slider-slide {
+	display: block;
+	position: relative;
+	opacity: 0;
+	-webkit-transition: opacity 0.6s linear;
+	-moz-transition: opacity 0.6s linear;
+	-ms-transition: opacity 0.6s linear;
+	-o-transition: opacity 0.6s linear;
+	border-radius: 25px;
+	transition: opacity 0.6s linear;
+}
+.lean-slider-slide.current {
+	border-radius: 25px;
+	opacity: 1;
+}
+.lean-slider-slide img {
+	display: block;
+	border-radius: 25px;
+	width: 100%;
+}
+
+#slider-direction-nav {
+	position: absolute;
+	left: -25px;
+	top: 94px;
+	width: 950px;
+	-webkit-transition: opacity 0.2s linear;
+	-moz-transition: opacity 0.2s linear;
+	-ms-transition: opacity 0.2s linear;
+	-o-transition: opacity 0.2s linear;
+	transition: opacity 0.2s linear;
+	opacity: 0.2;
+	height: 5px;
+	z-index: 0;
+}
+.slider-wrapper:hover #slider-direction-nav { opacity: 1; }
+#slider-direction-nav a {
+    float: left;
+    display: block;
+    width: 26px;
+    height: 37px;
+    background: url(images/arrows.png) no-repeat 0 0;
+    text-indent: -9999px;
+}
+#slider-direction-nav .lean-slider-next {
+    float: right;
+    background-position: 100% 0;
+}
+
+#slider-control-nav {
+	position: absolute;
+	left: -5px;
+	bottom: -240px;
+	width: 100%;
+	text-align: center;
+}
+.slider-wrapper:hover #slider-control-nav { opacity: 1; }
+#slider-control-nav a {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(images/bullets.png) no-repeat 0 0;
+    text-indent: -9999px;
+    margin: 0 3px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+#slider-control-nav a.active { background-position: 100% 0; }
+#sliderhome  {
+	width: 900px;
+	position: absolute;
+	height: 10px;
+	margin-top: 125px;
+	clear: both;
+	float: left;
+	margin-left: 55px;
+}
+#containerfunfacts {
+	margin-left: auto;
+	margin-right: auto;
+	border: medium solid #004C16;
+	background-image: url(images/funfactsfinal.jpg);
+	width: 1024px;
+	border-radius: 15px;
+	height: 3000px;
+	overflow:hidden;
+}
+#connect  {
+	margin-left: 650px;
+	margin-top: -202px;
+	position: absolute;
+}
+#connect #connectwithus {
+	margin-top: -60px;
+	margin-left: -15px;
+}
+#connect #fb {
+	margin-right: 10px;
+	margin-top: 10px;
+	float: left;
+	z-index: 50;
+}
+#connect #fb a {
+	color:black;
+	text-decoration:none;
+}
+#connect #fblogo {
+	float: left;
+	margin-left: -15px;
+	margin-top: 3px;
+	border-radius: 5px;
+	margin-right: 10px;
+	-webkit-box-shadow: 1px 1px 1px 1px #000000;
+	box-shadow: 1px 1px 1px 1px #000000;
+	z-index: 50;
+}
+
+
+#connect #twitlogo {
+	margin-left: -18px;
+	float: left;
+	border-radius: 10px;
+	clear: left;
+	-webkit-box-shadow: 1px 1px 1px 1px #000000;
+	box-shadow: 1px 1px 1px 1px #000000;
+	z-index: 50;
+}
+#connect #twit {
+	position: relative;
+	left: 25px;
+	top: -65px;
+	margin-top: 
+	5px;
+	padding-top: 7px;
+	padding-left: 9px;
+	z-index: 50;
+}
+
+#connect #twit a{
+	color:black;
+	text-decoration:none;
+}
+#connect #recyclelogo3  {
+	margin-left: -70px;
+	margin-top: 23px;
+}
+#navibar #home_btn {
+	margin-left: 10px;
+}
+#navibar {
+	position:relative;
+	top:-50px;
+}
+#birdtalk {
+	margin-left: 200px;
+	margin-top: 320px;
+}
+#navibar #aboutus_btn {
+	float: left;
+	margin-left: 10px;
+}
+#navibar #activities_btn {
+	float: left;
+	margin-left: 10px;
+}
+#navibar #funfacts_btn {
+	float: left;
+	margin-left: 10px;
+}
+#navibar #greentips_btn {
+	float: left;
+	margin-left: 10px;
+}
+#birdtalk {
+	font-family: 'Nunito', sans-serif;
+	margin-top: 450px;
+}
+#crabtalk {
+	font-family: 'Nunito', sans-serif;
+	margin-top: 400px;
+	margin-left: 200px;
+	margin-right: auto;
+	float: left;
+}
+#sharktalk {
+	margin-top: 525px;
+	float: left;
+	margin-left: 600px;
+}
+.font {
+ font-family: 'Nunito', sans-serif;
+}
+#octotalk {
+	margin-top: 1225px;
+	margin-left: 200px;
+}
+#goldfishtalk {
+	margin-left: 210px;
+	float: left;
+	margin-top: 200px;
+}
+#containerhome #FFOTD {
+	margin-top: 450px;
+	margin-left: 105px;
+	text-shadow: 1px 1px 1px #000000;
+	color: #5AD64D;
+}
+#containerhome #FFOTDdiv #recyclelogo1 {
+	margin-left: 45px;
+	float: left;
+}
+#containerhome #GTOTDdiv #recyclelogo2 {
+	margin-left: 45px;
+	position: absolute;
+	margin-top: -20px;
+}
+#containerhome #FFOTDdiv {
+	position: static;
+	margin-left: -25px;
+}
+#footer {
+	position: relative;
+	top: 10px;
+	left: 15px;
+}
+#containerfunfacts #footer {
+	position: absolute;
+	margin-top: 200px;
+	top: 2695px;
+	left: 130px;
+}
+#containergames #footer {
+	position: relative;
+	top: -175px;
+}
+#footer #copyright  {
+	font-family: 'Nunito', sans-serif;
+	font-weight: lighter;
+	position:relative;
+	top:35px;
+	left:30px;
+}
+#footer #feedback  {
+	font-family: 'Nunito', sans-serif;
+	font-weight: lighter;
+	position:relative;
+	top:-35px;
+	left:700px;
+}
+#containerhome #GTOTD {
+	margin-left: 105px;
+	margin-top: -20px;
+}
+#containerhome #GTOTDdiv #GTOTDpic {
+	border-radius: 10px;
+	margin-left: 100px;
+	-webkit-box-shadow: 1px 2px 2px 1px #151515;
+	box-shadow: 1px 2px 2px 1px #151515;
+}
+#containerhome #GTOTDdiv {
+	position: absolute;
+	margin-top: 100px;
+	margin-left: -15px;
+}
+.headerfont {
+	font-family: 'Nunito', sans-serif;
+	text-shadow: 1px 1px 1px #000000;
+	color: #5AD64D;
+}
+#containerhome #FFOTDdiv #FFOTDpic {
+	margin-left: 100px;
+	-webkit-box-shadow: 1px 2px 2px 1px #000000;
+	border-radius: 10px;
+	box-shadow: 1px 2px 2px 1px #000000;
+}
+#printdiv {
+	margin-left: 700px;
+	padding-top: 20px;
+}
+#printdiv #recyclelogo4 {
+	margin-left: -118px;
+	margin-top: 40px;
+}
+#printdiv #print {
+	margin-top: -60px;
+	text-align: left;
+	margin-left: -63px;
+}
+#containercontactus {
+	width: 1024px;
+	height: 1450px;
+	background-image: url(images/bgkids.png);
+	margin-left: auto;
+	margin-right: auto;
+	border: medium solid #004C16;
+	border-radius: 15px;
+	background-size: contain;
+	overflow:hidden;
+}
+#printdiv #printableexample {
+	border-radius: 15px;
+	margin-left: -70px;
+	-webkit-box-shadow: 1px 2px 2px 2px #000000;
+	box-shadow: 1px 2px 2px 2px #000000;
+}
+#ggkids  {
+	border-top-right-radius: 15px 15px;
+}
+#navibar #homesub {
+}
+#otd {
+	border: medium groove #000000;
+	width: 500px;
+}
+#contactusdiv #contactusdivcontain #feedbackform {
+	margin-left: 60px;
+	font-size: xx-large;
+}
+#contactusdiv #contactusdivcontain #twitlogo {
+	position: relative;
+	left: 350px;
+	top: auto;
+	bottom: 130px;
+}
+#contactusdivcontain #message #submit {
+	position: relative;
+	top: 320px;
+	left: 310px;
+	font-family: 'Nunito',san serif;
+}
+#search {
+	margin-left: 10px;
+}
+
+#contactusdivcontain #message #submit:hover {
+	position: relative;
+	top: 320px;
+	left: 320px;
+	font-family: 'Nunito',san serif;
+	background-color: #2E9A00;
+}
+#searchbox  {
+	position: relative;
+	left: 700px;
+	top: -75px;
+}
+#containerfunfacts #funfactsheader {
+	font-size: 70px;
+	text-shadow: 1px 1px 1px #000000;
+	color: #FFEF0D;
+	margin-top: 100px;
+	text-align: center;
+}
+#containerfunfacts #birdyshow #birdy {
+	margin-left: 650px;
+	margin-top: 120px;
+}
+#containerfunfacts #birdyshow #birdy:hover {
+	-webkit-animation-name: 'spaceboots';
+	-webkit-animation-duration: 0.7s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	
+}
+#containerfunfacts #birdyshow #birdyspeech {
+	margin-left: 80px;
+	margin-top: -70px;
+	visibility: hidden;
+}
+#containerfunfacts #birdyshow #birdyspeechtext {
+	margin-left: 170px;
+	margin-top: -150px;
+	font-size: xx-large;
+	visibility: hidden;
+}
+#containerfunfacts #monkeyshow #monkey {
+	margin-left: 530px;
+	margin-top: 760px;
+	position: relative;
+}
+#containerfunfacts #monkeyshow #monkey:hover {
+		-webkit-animation-name: 'spaceboots';
+	-webkit-animation-duration: 0.7s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+#containerfunfacts #monkeyshow #monkeyspeech {
+	margin-left: 50px;
+	padding-bottom: 140px;
+	margin-top: -273px;
+	position: relative;
+}
+#containerfunfacts #monkeyshow #monkeyspeechtext {
+	margin-left: 100px;
+	margin-top: -290px;
+	font-size: x-large;
+	position: relative;
+}
+#containerfunfacts #sharkshow #sharky {
+	width: auto;
+	margin-top: 500px;
+	margin-left: 100px;
+}
+
+#containerfunfacts #sharkshow #sharky:hover {
+		-webkit-animation-name: 'spaceboots';
+	-webkit-animation-duration: 0.7s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+#containerfunfacts #sharkshow #sharkspeech {
+	margin-left: 450px;
+	margin-top: -300px;
+}
+#containerfunfacts #sharkshow #sharkspeechtext {
+	font-size: x-large;
+	margin-left: 535px;
+	margin-top: -130px;
+}
+#containerfunfacts #octoshow #octo {
+	margin-left: 650px;
+	margin-top: 70px;
+	position: relative;
+}
+
+#containerfunfacts #octoshow #octo:hover {
+	-webkit-animation-name: 'spaceboots';
+	-webkit-animation-duration: 0.7s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+#containerfunfacts #octoshow {
+	position: relative;
+}
+#containerfunfacts #octoshow #octospeech {
+	margin-left: 90px;
+	margin-top: -400px;
+	padding-bottom: 180px;
+	visibility: hidden;
+}
+#containerfunfacts #octoshow #octospeechtext {
+	visibility: hidden;
+	font-size: x-large;
+	margin-left: 170px;
+	margin-top: -330px;
+}
+#containerprintables {
+	width: 1024px;
+	height: 2000px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	border-radius: 15px;
+	background-image: url(images/bgprintables.jpg);
+	border: medium solid #004C16;
+}
+#containerprintables #welcome {
+	text-align: center;
+	font-size: 70px;
+	margin-top: 100px;
+	color: #FFCF79;
+}
+#containerprintables #drawings #drawingblank {
+	margin-left: -80px;
+}
+#containerprintables #drawings {
+	margin-top: 100px;
+}
+#containerprintables #drawings #colourheader {
+	text-align: left;
+	font-size: 50px;
+	color: #FFCF79;
+	position: relative;
+	left: 100px;
+	top: 30px;
+}
+
+
+
+#containerprintables #connectthedots #dotsheader {
+	font-size: 50px;
+	text-align: left;
+	margin-left: 100px;
+	position: relative;
+	top: -200px;
+	color: #FFCF79;
+}
+#connectthedots #dots  {
+	position: relative;
+	top: -200px;
+	left: 30px;
+}
+#connectthedots #dots1  {
+	position: relative;
+	left: -730px;
+	top: -200px;
+}
+
+#connectthedots #dots1:hover  {
+	content:url(images/dots1hover.png)
+}
+
+
+#connectthedots #dots2  {
+	position: relative;
+	left: 490px;
+	top: -520px;
+}
+#connectthedots #dots2:hover  {
+	content:url(images/dots2hover.png);
+}
+#connectthedots #dots3  {
+	position: relative;
+	left: 600px;
+	top: -400px;
+}
+#connectthedots #dots3:hover  {
+	content:url(images/dots3hover.png)
+}
+#containerprintables #hanger #hangerheader {
+	font-size: 50px;
+	position: relative;
+	left: 100px;
+	top: -500px;
+	color: #FFCF79;
+}
+#containerprintables #drawings #drawing1 {
+	padding-top: 0px;
+	position: relative;
+	left: 23px;
+	top: -220px;
+}
+#containerprintables #drawings #drawing2 {
+	position: relative;
+	top: -210px;
+	left: 114px;
+}
+#containerprintables #drawings #drawing3 {
+	position: relative;
+	left: 195px;
+	top: -209px;
+}
+#containerprintables #hanger #rope {
+	position: relative;
+	top: -530px;
+}
+#containerprintables #hanger #hanger1 {
+	position: relative;
+	top: -598px;
+	left: 10px;
+	transition: linear;
+}
+#containerprintables #hanger #hanger1:hover {
+			-webkit-animation-name: 'spaceboots';
+	-webkit-animation-duration: 0.8s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+#containerprintables #hanger #hanger2 {
+	position: relative;
+	top: -655px;
+	left: 200px;
+}
+#containerprintables #hanger #hanger2:hover {
+				-webkit-animation-name: 'spaceboots';
+	-webkit-animation-duration: 0.8s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+
+#containerprintables #hanger #hanger3 {
+	position: relative;
+	top: -607px;
+	left: 370px;
+}
+#containerprintables #hanger #hanger3:hover {
+				-webkit-animation-name: 'spaceboots';
+	-webkit-animation-duration: 0.7s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+#containeraboutus {
+	width: 1024px;
+	height: 1550px;
+	border-width: medium;
+	border-radius: 15px;
+	border-style: solid;
+	background-image: url(images/bgaboutus.jpg);
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+#containeraboutus #aboutusdiv {
+	width: 600px;
+	height: 940px;
+	position: relative;
+	left: 50px;
+	border-radius: 15px;
+	border: medium solid #000000;
+	background-color: #FFFFFF;
+	top: 100px;
+	font-size: x-large;
+	margin-left: 160px;
+	margin-right: auto;
+}
+#containeraboutus #aboutusdiv #ourstory {
+	margin-left: 30px;
+}
+#containeraboutus #aboutusdiv #aboutustext {
+	font-size: medium;
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: justify;
+	text-indent: 50px;
+}
+#containeraboutus #footer {
+	position: relative;
+	top: 125px;
+}
+#containeraboutus #aboutusdiv #dogsad {
+	margin-left: 180px;
+	margin-top: -70px;
+}
+#containeraboutus #aboutusdiv #dogsadtext {
+	position: absolute;
+	left: 210px;
+	top: 327px;
+}
+#containeraboutus #aboutusdiv #dogsaddiag {
+	font-size: medium;
+	position: relative;
+	left: 210px;
+	top: 50px;
+}
+#containeraboutus #aboutusdiv #dogexciteddiag {
+	font-size: medium;
+	position: relative;
+	left: 100px;
+	top: -70px;
+	z-index: 2;
+}
+#containeraboutus #aboutusdiv #dogexcited {
+	margin-top: -150px;
+	position: relative;
+	top: -50px;
+	z-index: 1;
+}
+#containeraboutus #aboutusdiv #dogexcitedtext {
+	left: 100px;
+	position: relative;
+	top: -50px;
+	z-index: 2;
+}
+#containeraboutus #checkusout #checkusouttext {
+	position: relative;
+	left: 250px;
+	top: -240px;
+}
+#aboutusdiv #checkusout #checkusoutmore {
+	font-size: medium;
+	position: relative;
+	left: 180px;
+	top: -255px;
+}
+#checkusout #ourtwitter #twitaboutus {
+	z-index: 80;
+	position: relative;
+	left: 210px;
+	top: -210px;
+}
+#checkusout #ourfacebook #p2 {
+	position: relative;
+	font-size: medium;
+}
+#aboutusdiv #checkusout #thetwit {
+	position: relative;
+	top: -375px;
+	left: 270px;
+	font-size: medium;
+}
+
+#aboutusdiv #checkusout #thetwit a{
+	color:black;
+	text-decoration:none
+}
+#checkusout #ourfacebook #fbaboutus {
+	left: 210px;
+	position: relative;
+	top: -370px;
+}
+#checkusout #ourtwitter #p1 {
+	position: relative;
+	top: -320px;
+	font-size: medium;
+	left: 270px;
+}
+
+#checkusout #ourtwitter #p1 a{
+	color:black;
+	text-decoration:none;
+}
+#containergreentips {
+	width: 1024px;
+	height: 2145px;
+	background-image: url(images/bggreentips.jpg);
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 15px;
+	border: medium solid #004C16;
+	overflow: hidden;
+}
+#containergreentips #forkidsheader {
+	text-align: center;
+	font-size: 70px;
+	margin-top: 100px;
+	color: #1CFF76;
+}
+#containergreentips #forkidsheader #kids {
+	color: #FFE300;
+	text-align: center;
+}
+#containergreentips #lighttip #light1 {
+	position: relative;
+	float: right;
+	left: -200px;
+	top: -85px;
+	z-index: 1;
+}
+#containergreentips #lighttip #light2 {
+	float: right;
+	left: 80px;
+	position: relative;
+	top: -112px;
+	z-index: 1;
+}
+#containergreentips #lighttip #light3 {
+	float: right;
+	left: -600px;
+	position: relative;
+	top: -85px;
+	z-index: 1;
+}
+#containergreentips #footer {
+	position: relative;
+	top: -815px;
+}
+#containergreentips #lighttip #lightdogsad {
+	margin-left: 190px;
+	margin-top: 10px;
+}
+#containergreentips #lighttip #lightdoghappy {
+	position:relative;
+	margin-left: 160px;
+	top: -190px;
+	visibility:hidden;
+}
+#containergreentips #lighttip #lightspeech {
+	position: relative;
+	left: 300px;
+	top: -230px;
+}
+#containergreentips #lighttip #tip {
+	font-size: larger;
+	text-align: center;
+	position: relative;
+	top: -550px;
+	left: -10px;
+	z-index: 0;
+}
+#containergreentips #lighttip #lightspeechtext {
+	font-size: 22px;
+	position: relative;
+	left: 370px;
+	top: -480px;
+}
+#containergreentips #watertip #waterspeechtext {
+	font-size: 22px;
+	position: relative;
+	left: 400px;
+	top: -930px;
+}
+#containergreentips #lighttip #line1 {
+	margin-left: -5px;
+}
+#containergreentips #fantip #line2 {
+	position: relative;
+	top: -470px;
+	margin-left: -5px;
+}
+#containergreentips #fantip #fan {
+	position: relative;
+	top: -420px;
+	left: 75px;
+	-webkit-animation-name: 'spaceboots';
+	-webkit-animation-duration: 1.5s;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+#containergreentips #fantip #tip2 {
+	font-size: larger;
+	text-align: center;
+	position: relative;
+	top: -770px;
+	left: -10px;
+}
+#containergreentips #fantip #fanspeech {
+	top: -420px;
+	position: relative;
+}
+#containergreentips #fantip #fandog {
+	position: relative;
+	top: -560px;
+	-webkit-animation-name: 'fly';
+	-webkit-animation-duration: 0.7s;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+#containergreentips #fantip #fanspeechtext {
+	font-size: 22px;
+	position: relative;
+	left: 340px;
+	top: -670px;
+}
+#containergreentips #watertip #line3 {
+	top: -600px;
+	position: relative;
+	margin-left: -5px;
+}
+#watertip #doginpail #bucket {
+	position: relative;
+	top: -520px;
+	left: 100px;
+}
+#watertip #doginpail #dogcold {
+	position: relative;
+	left: -90px;
+	top: -670px;
+	-webkit-animation-name: 'spaceboots';
+	-webkit-animation-duration: 0.7s;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+#watertip #doginpail #bucketopen {
+	position: relative;
+	left: -272px;
+	top: -520px;
+}
+#containergreentips #watertip #watertipspeech {
+	position: relative;
+	left: 330px;
+	top: -700px;
+}
+#containergreentips #watertip #tip3 {
+	font-size: 20px;
+	text-align: center;
+	position: relative;
+	top: -970px;
+	left: 100px;
+}
+#greentipssl {
+	position:absolute;
+	left:-15px;
+	border-radius:25px;
+	border:2px solid black;
+
+}
+#slider .slide2 #gamessl {
+	z-index: 1;
+}
+#slider .slide4 #printablessl {
+	z-index: 1;
+}
+.slide3 a #funfactssl {
+	z-index: 1;
+}
+#containergreenparents #gardentip #gardentiptext {
+	text-align: center;
+	position: relative;
+}
+#containergreenparents #footer {
+	position: relative;
+	top: 100px;
+}
+#containergreenparents #gardentip #plantfood {
+	position: relative;
+	top: -100px;
+	left: 100px;
+}
+#containergreenparents #gardentip #sun {
+	position: relative;
+	left: 100px;
+	top: -160px;
+}
+#containergreenparents #cartip #parentline2 {
+	position: relative;
+	left: -5px;
+}
+#containergreenparents #picnictip #parentline1 {
+	left: -5px;
+	position: relative;
+}
+#containergames {
+	width: 1024px;
+	height: 1745px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	background-image: url(images/bggames.jpg);
+	border-radius: 15px;
+	border: medium solid #004C16;
+}
+#containergames #games {
+	position: relative;
+	text-align: center;
+	font-size: 70px;
+	top: 70px;
+}
+#containergames #games #gamename {
+	color: #FCFF00;
+}
+#containergames #games #quiz {
+	color: #0489FC;
+}
+#containergames #game1 #invertline1 {
+	position: relative;
+	top: 100px;
+}
+#containergames #game1 #firstgame {
+	position: relative;
+	top: 150px;
+	left: 70px;
+}
+#containergames #game1 #game1text {
+	position: relative;
+	text-align: center;
+	left: 200px;
+	font-size: large;
+	top: -50px;
+}
+#containergames #game2 #secondgame {
+	position: relative;
+	left: 500px;
+}
+#containergames #game2 #game2text {
+	text-align: center;
+	font-size: large;
+	position: relative;
+	left: -250px;
+	top: -150px;
+}
+#containergames #game2 #invertline2 {
+}
+#containergames #game3 #invertline3 {
+	position: relative;
+	top: -100px;
+}
+#containergames #game3 #thirdgame {
+	position: relative;
+	left: 70px;
+	top: -80px;
+}
+#containergames #game3 #game3text {
+	font-size: large;
+	text-align: center;
+	position: relative;
+	left: 200px;
+	top: -280px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-width : 480px) {
+
+    #slider-direction-nav,
+	#slider-control-nav { opacity: 1; }
+
+}
+
+.dropbtn {
+	background-color: #52B747;
+	color: white;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	padding-top: 10px;
+	border-radius: 10px;
+	padding-bottom: 10px;
+}
+#containergreenparents #gardentip #parentline3 {
+	position: relative;
+	top: -50px;
+	left: -5px;
+}
+#containergreenparents #gardentip #garden {
+	position: relative;
+	left: 290px;
+	top: 50px;
+}
+#containergreenparents #gardentip #wateringcan {
+	position: relative;
+	left: -270px;
+	top: -100px;
+		-webkit-animation-name: 'pour';
+	-webkit-animation-duration: 1.0s;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+#containergreenparents {
+	width: 1024px;
+	height: 2145px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 15px;
+	border: medium solid #004C16;
+	background-image: url(images/bggreentips.jpg);
+	overflow: hidden;
+}
+#containergreenparents #forparentsheader {
+	text-align: center;
+	font-size: 70px;
+	position: relative;
+	top: 40px;
+}
+#containergreenparents #forparentsheader #parents {
+	color: #EFFF00;
+}
+#containergreenparents #picnictip #picnictiptext {
+	font-weight: normal;
+	text-align: center;
+	text-indent: 10px;
+	position: relative;
+	left: -225px;
+}
+#containergreenparents #picnictip #picnic {
+	position: relative;
+	left: 500px;
+	z-index: 1;
+}
+#containergreenparents #picnictip #picnicdad {
+	position: relative;
+	left: 350px;
+	top: -105px;
+}
+#containergreenparents #picnictip #picnicmom {
+	left: 195px;
+	position: relative;
+	top: -100px;
+}
+#containergreenparents #picnictip #picnicson {
+	position: relative;
+	top: -100px;
+	left: 50px;
+	z-index: 0;
+	-webkit-animation-name: 'jump';
+	-webkit-animation-duration: 0.4s;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+#containergreenparents #gardentip #pour {
+	position: relative;
+	left: -475px;
+	top: -105px;
+	-webkit-animation-name: 'water';
+	-webkit-animation-duration: 1.0s;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+#containergreenparents #picnictip #picnicsis {
+	position: relative;
+	left: 180px;
+	top: -100px;
+	-webkit-animation-name: 'jump';
+	-webkit-animation-duration: 0.7s;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+#containergreenparents #cartip #cartiptext {
+	text-align: center;
+	position: relative;
+	left: -200px;
+	top: 20px;
+}
+#containergreenparents #cartip #car {
+	position: relative;
+	left: 530px;
+	z-index: 2;
+	-webkit-animation-name: 'spaceboots';
+	-webkit-animation-duration: 1.0s;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+#containergreenparents #cartip #daddrive {
+	position: relative;
+	left: -30px;
+	top: -50px;
+}
+#containergreenparents #cartip #cardad {
+	left: 280px;
+	position: relative;
+	top: -20px;
+	z-index: 1;
+	-webkit-animation-name: 'spaceboots';
+	-webkit-animation-duration: 2.0s;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+#contactusdivcontain #fblink #ggkidsfb {
+	position: relative;
+	top: -80px;
+	margin-left: 190px;
+	left: -7px;
+	
+}
+#contactusdivcontain #fblink #ggkidsfb a{
+	color:black;
+	text-decoration:none;
+	
+}
+
+.dropdown {
+}
+#contactusdivcontain #twitlink #ggkidstwit {
+	position: relative;
+	margin-left: 415px;
+	top: -187px;
+	left: -10px;
+}
+#contactusdivcontain #twitlink #ggkidstwit a{
+	color:black;
+	text-decoration:none;
+}
+#contactusdivcontain #links #fblink {
+	margin-left: 300px;
+	margin-top: -100px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #FFFFFF;
+	min-width: 216px;
+	font-family: 'Nunito', san-serif;
+	margin-top: 30px;
+	border-bottom-right-radius: 15px 15px;
+	border-bottom-left-radius: 15px 15px;
+	color: black;
+	max-width: 220px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-left: medium solid #000000;
+	border-right: medium solid #000000;
+	border-bottom: medium solid #000000;
+	
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	display: block;
+	border-left-width: medium;
+	border-right-width: medium;
+	border-bottom-width: thick;
+	text-decoration: none;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+	border-bottom-left-radius: 15px 15px;
+	border-bottom-right-radius: 15px 15px;
+	text-decoration: none;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover #aboutusbtn {
+	content:url(images/aboutus_btn_hover.jpg);
+}
+
+.dropdown:hover #activitiesbtn {
+	content:url(images/activities_btn_hover.jpg);
+}
+
+.dropdown:hover #funfactsbtn {
+	content:url(images/funfacts_btn_hover.jpg);
+}
+
+.dropdown:hover #greentipsbtn {
+	content:url(images/greentips_btn_hover.jpg);
+}
+
+#navibar ul 
+ {
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+#navibar ul a
+ {
+	display:block;
+	color:#333;
+	text-decoration:none;
+	font-weight:700;
+	font-size:12px;
+	line-height:32px;
+	padding:0 15px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+#navibar ul li 
+ {
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+#navibar ul li.current-menu-item
+{
+	background:#ddd
+}
+#navibar ul li:hover
+{
+	background:#f6f6f6
+}
+#navibar ul ul
+ {
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#fff;
+	padding:0
+}
+#navibar ul ul li
+ {
+	float:none;
+	width:141px
+}
+#navibar ul ul a
+ {
+	line-height:120%;
+	padding:10px 15px
+}
+#navibar  ul ul ul
+ {
+	top:0;
+	left:100%
+}
+#navibar ul li:hover > ul  
+{
+	display:block
+}
+
+
+@-webkit-keyframes spaceboots {
+	0%   { -webkit-transform: translate(2px, 1px)   rotate(0deg); }
+	10%  { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20%  { -webkit-transform: translate(-3px, 0px)  rotate(1deg); }
+	30%  { -webkit-transform: translate(0px, 2px)   rotate(0deg); }
+	40%  { -webkit-transform: translate(1px, -1px)  rotate(1deg); }
+	50%  { -webkit-transform: translate(-1px, 1px)  rotate(-1deg); }
+	60%  { -webkit-transform: translate(-3px, -2px)  rotate(0deg); }
+	70%  { -webkit-transform: translate(2px, 1px)   rotate(-1deg); }
+	80%  { -webkit-transform: translate(-1px, -2px) rotate(1deg); }
+	90%  { -webkit-transform: translate(2px, -1px)   rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px)  rotate(-1deg); }
+}
+
+@-webkit-keyframes fly {
+	0%   { -webkit-transform: translate(1px, 1px)   ; }
+	10%  { -webkit-transform: translate(3px, 3px); }
+	20%  { -webkit-transform: translate(5px, 5px)  ; }
+	30%  { -webkit-transform: translate(7px, 7px) ; }
+	40%  { -webkit-transform: translate(9px, 9px); }
+	50%  { -webkit-transform: translate(11px, 11px)  ; }
+	60%  { -webkit-transform: translate(9px, 9px)  ; }
+	70%  { -webkit-transform: translate(7px, 7px)   ; }
+	80%  { -webkit-transform: translate(5px, 5px) ; }
+	90%  { -webkit-transform: translate(3px, 3px)  ; }
+	100% { -webkit-transform: translate(1px, 1px); }
+}
+
+@-webkit-keyframes jump {
+	0%   { -webkit-transform: translate(0px, 1px)   ; }
+	10%  { -webkit-transform: translate(0px, 3px); }
+	20%  { -webkit-transform: translate(0px, 5px)  ; }
+	30%  { -webkit-transform: translate(0px, 7px) ; }
+	40%  { -webkit-transform: translate(0px, 9px); }
+	50%  { -webkit-transform: translate(0px, 11px)  ; }
+	60%  { -webkit-transform: translate(0px, 9px)  ; }
+	70%  { -webkit-transform: translate(0px, 7px)   ; }
+	80%  { -webkit-transform: translate(0px, 5px) ; }
+	90%  { -webkit-transform: translate(0px, 3px)  ; }
+	100% { -webkit-transform: translate(0px, 1px); }
+}
+@-webkit-keyframes pour {
+	0%   { -webkit-transform: rotate(0deg); }
+	10%  { -webkit-transform: rotate(4deg); }
+	20%  { -webkit-transform: rotate(8deg); }
+	30%  { -webkit-transform: rotate(12deg); }
+	40%  { -webkit-transform: rotate(16deg); }
+	50%  { -webkit-transform: rotate(20deg); }
+	60%  { -webkit-transform: rotate(16deg); }
+	70%  { -webkit-transform: rotate(12deg); }
+	80%  { -webkit-transform: rotate(8deg); }
+	90%  { -webkit-transform: rotate(4deg); }
+	100% { -webkit-transform: rotate(0
+	deg); }
+}
+
+@-webkit-keyframes water {
+	0%   { -webkit-transform: translate(1px, 1px)   ; }
+	10%  { -webkit-transform: translate(3px, 3px); }
+	20%  { -webkit-transform: translate(5px, 5px)  ; }
+	30%  { -webkit-transform: translate(7px, 7px) ; }
+	40%  { -webkit-transform: translate(9px, 9px); }
+	50%  { -webkit-transform: translate(11px, 11px)  ; }
+	60%  { -webkit-transform: translate(9px, 9px)  ; }
+	70%  { -webkit-transform: translate(7px, 7px)   ; }
+	80%  { -webkit-transform: translate(5px, 5px) ; }
+	90%  { -webkit-transform: translate(3px, 3px)  ; }
+	100% { -webkit-transform: translate(1px, 1px); }
+}
+
+#button {
+	position:relative;
+	top:-65px;
+	left:-50px;
+	opacity:0;
+}

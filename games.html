@@ -1,0 +1,132 @@
+
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Go Green, Kids! - Homepage</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+  <script src="scripts/modernizr-2.6.1.min.js"></script>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="scripts/lean-slider.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,300,700" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="containergames">
+
+<img src="images/gogreendog.jpg" alt="" width="179" height="318" usemap="#Map2" id="gogreendog"/>
+<map name="Map2">
+  <area shape="rect" coords="38,173,174,294" href="index.html">
+</map>
+<img src="images/gogreenkids.jpg" alt="" width="845" height="318" usemap="#Map"/>
+<map name="Map">
+  <area shape="rect" coords="2,102,797,221" href="index.html">
+</map>
+
+<div class="font" id="searchbox">Search:<input class="curves" type="search" id="search"></div>
+<div id="navibar"> 
+<a href="index.html">
+<div id="home_btn"> 
+
+<img src="images/home_btn.jpg" alt="" width="141" height="27" id="homebtn"/>
+</div></a>
+
+<div class="dropdown" id="aboutus_btn">
+<div class="dropdown-content">
+<a href="aboutus.html">Our Story</a>
+      <a href="contactus.html"> Contact Us</a>
+</div>
+<img src="images/aboutus_btn.jpg" alt="" width="188" height="27" id="aboutusbtn"/>
+</div>
+
+<div class="dropdown" id="activities_btn">
+<div class="dropdown-content">
+	<a href="games.html">Games & Quizzes</a>
+      <a href="printables.html"> Print Me!</a>
+ </div>
+<img src="images/activities_btn.jpg" alt="" width="216" height="27" id="activitiesbtn"/> 
+</div>
+
+<div class="dropdown" id="funfacts_btn"> <a href="funfacts.html"><img src="images/funfacts_btn.jpg" alt="" width="199" height="27" id="funfactsbtn"/></a>
+</div>
+
+
+<div class="dropdown" id="greentips_btn">
+<div class="dropdown-content">
+<a href="greentipsforkids.html">For Kids</a>
+      <a href="greentipsforparents.html"> For Parents</a>
+</div>
+<img src="images/greentips_btn.jpg" alt="" width="213" height="27" id="greentipsbtn"/>
+
+</div>
+
+</div>
+
+<h1 class="headerfont" id="games"><span id="gamename">Games</span> & <span id="quiz">Quizzes!</span> </h1>
+
+<div id="game1">
+<img src="images/invertline.png" alt="" width="1024" height="104" id="invertline1"/>
+<img src="images/game1.png" alt="" width="383" height="122" id="firstgame"/>
+<p class="font" id="game1text"> <strong>LOST</strong><br/> Wander into the deep forest, finding mystical and wondrous<br/> creatures as you go along to try to find your way through.<br/>
+solve the world's issues that is the pollution of the land!<br/>
+<br/>Suitable for ages: <strong>10+</strong></p>
+</div>
+
+<div id="game2">
+<img src="images/invertline.png" alt="" width="1024" height="104" id="invertline2"/>
+<img src="images/game2.png" alt="" width="382" height="122" id="secondgame"/>
+<p class="font" id="game2text"> <strong>NARAKU'S PLAGUE</strong><br/> Journey to the land of Nihon, a magical land filled with<br/>dangerous but sometimes cute animals<br/>  called 'yokai'! Help the hero of his time,<br/> Inuyasha, solve the plague of Naraku!<br/><br/>Suitable for ages: <strong>5+</strong></p>
+</div>
+<div id="game3">
+<img src="images/invertline.png" alt="" width="1024" height="104" id="invertline3"/>
+<img src="images/game3.png" alt="" width="383" height="122" id="thirdgame"/>
+<p class="font" id="game3text"><strong>ADVENTURE: G.R.E.E.N</strong><br/> Go on an adventure with Dinn and Jrake<br/> and have a wonderful time in the green lands of Falkwoods!<br/> There are many quizzes in store for you, so what are you<br/> waiting for? Come join in the fun!<br/><br/>Suitable for ages: <strong>7+</strong></p>
+
+</div>
+<div id="footer">
+<h6 id="copyright"> Copyright © 2016 </h6>
+<h6 id="feedback"> Site Feedback | Policy Statement </h6>
+
+</div>
+</div>
+</body>
+<script>
+var counter=0
+function RemoveLight1() {
+	counter++;
+	document.getElementById('light1').src='images/lightoff.png'
+	if(counter==3){
+		document.getElementById('lightdogsad').src='images/greentipsdogexcited.png'
+	}
+}
+function RemoveLight2() {
+	document.getElementById('light2').src='images/lightoff.png'
+	if(counter==3){
+		document.getElementById('lightdogsad').src='images/greentipsdogexcited.png';
+		document.getElementById('lightspeechtext').innerHTML = "Yay! Now we won't be wasting so much electricity!"
+	}
+}
+function RemoveLight3() {
+	document.getElementById('light3').src='images/lightoff.png'
+	if(counter==3){
+		document.getElementById('lightdogsad').src='images/greentipsdogexcited.png'
+	}
+}
+
+var clicked="";
+count=0;
+function countClicks(){
+
+		count++;
+		
+	if(count==3){
+		document.getElementById('lightspeechtext').innerHTML = "Yay! Now we won't waste <br/> electricity!";
+		document.getElementById('lightdogsad').style.visibility= "hidden";
+		document.getElementById('lightdoghappy').style.visibility= "visible";
+	}
+}
+</script>
+</html>
